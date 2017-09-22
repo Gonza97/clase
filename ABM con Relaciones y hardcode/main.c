@@ -43,7 +43,7 @@ void inicializarMedicamentos(eMedicamento[], int);
 void inicializarClientes(eCliente[], int);
 
 void mostrarMedicamentos(eMedicamento[], int);
-void mostrarClientes(eCliente[], int);
+void mostrarClientes(eCliente[], int,eMedicamento[],int);
 
 int main()
 {
@@ -59,7 +59,7 @@ int main()
 
     mostrarMedicamentos(listaMedicamentos, MED);
     printf("\n***************************************************\n");
-    mostrarClientes(listaClientes, CLI);
+    mostrarClientes(listaClientes,CLI, listaMedicamentos, MED);
 
 
 
